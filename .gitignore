@@ -1,0 +1,36 @@
+# OpenLane runs
+runs/
+*.log
+*.tmp
+
+# Simulation
+*.vcd
+*.fst
+*.wlf
+
+# Editor / OS files
+*~
+*.swp
+*.swo
+.DS_Store
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Temporary files
+/tmp/
+temp/
+tmp/
+
+# Large intermediate physical-design files
+*.spef
+*.sdf
+*.lib
+
+# OpenLane intermediate databases
+*.odb
+
+# Backup RTL files
+*_before_*
+*_backup*

@@ -1,0 +1,60 @@
+{
+  "DESIGN_NAME": "riscv_cpu",
+
+  "VERILOG_FILES": [
+    "/project/rtl/alu.v",
+    "/project/rtl/control_unit.v",
+    "/project/rtl/data_memory.v",
+    "/project/rtl/immediate_generator.v",
+    "/project/rtl/instruction_memory.v",
+    "/project/rtl/pc.v",
+    "/project/rtl/register_file.v",
+    "/project/rtl/pipeline_registers.v",
+    "/project/rtl/forwarding_unit.v",
+    "/project/rtl/hazard_unit.v",
+    "/project/rtl/riscv_cpu.v"
+  ],
+
+  "CLOCK_PORT": "clk",
+  "CLOCK_PERIOD": 10.0,
+
+  "SYNTH_STRATEGY": "DELAY 3",
+
+  "PNR_SDC_FILE": "/project/config/constraints.sdc",
+  "SIGNOFF_SDC_FILE": "/project/config/constraints.sdc",
+
+  "PDK": "sky130A",
+  "STD_CELL_LIBRARY": "sky130_fd_sc_hd",
+
+  "FP_SIZING": "absolute",
+
+  "DIE_AREA": "0 0 1800 1800",
+
+  "FP_CORE_UTIL": 10,
+  "PL_TARGET_DENSITY_PCT": 20,
+
+  "MAX_FANOUT_CONSTRAINT": 6,
+
+  "RUN_POST_CTS_RESIZER_TIMING": true,
+  "RUN_POST_GRT_RESIZER_TIMING": true,
+
+  "PL_RESIZER_MAX_WIRE_LENGTH": 0,
+
+  "PL_RESIZER_MAX_SLEW_MARGIN": 20,
+
+  "PL_RESIZER_HOLD_MAX_BUFFER_PCT": 100,
+  "PL_RESIZER_HOLD_SLACK_MARGIN": 0.2,
+
+  "PL_RESIZER_SETUP_SLACK_MARGIN": 3.0,
+
+  "GRT_RESIZER_SETUP_MAX_BUFFER_PCT": 100,
+
+  "MAX_TRANSITION_CONSTRAINT": 0.60,
+  "MAX_CAPACITANCE_CONSTRAINT": 0.15,
+
+  "KLAYOUT_XOR_IGNORE_LAYERS": [
+    "235/4"
+  ],
+
+  "QUIT_ON_XOR_ERROR": false
+}
